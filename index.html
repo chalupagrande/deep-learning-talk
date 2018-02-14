@@ -1,0 +1,92 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+		
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+		<link rel="stylesheet" href="css/styles.css">
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+					<h1>Deep Learning</h1>
+					<p class='fragment'>and how to buy the perfect house</p>
+				</section>
+				<section>
+					<section>
+						<h1>Definitions</h1>
+						<div class="align-left">
+							<h4>Artificial Intelligence: </h4><p class='indent'> the ability to learn without being explicitly programmed.</p>
+							<h4>Machine Learning: </h4><p class='indent'> an approach of reaching AI by training an alogrithm to do a specific task.</p>
+							<h4>Deep Learning: </h4><p class='indent'> a specific apprach to ML.</p>
+						</div>
+					</section>
+				</section>
+				<!-- GRADES INTRO --> 
+				<section>
+					<section>
+						<h3>Remember Grades?</h3>
+						<p> Quizes are worth 40%. Tests are worth 60%</p>
+						<ul>
+							<li>Quiz 1: <span class="fragment highlight-blue" data-fragment-index=0>66</span></li>
+							<li>Quiz 2: <span class="fragment highlight-blue" data-fragment-index=0>76</span></li>
+							<li>Test 1: <span class="fragment highlight-red" data-fragment-index=0>89</span></li>
+							<li>Quiz 3: <span class="fragment highlight-blue" data-fragment-index=0>73</span></li>
+							<li>Quiz 4: <span class="fragment highlight-blue" data-fragment-index=0>91</span></li>
+							<li>Test 2: <span class="fragment highlight-red" data-fragment-index=0>96</span></li>
+						</ul>
+					</section>
+					<section>
+						<h3>Calculate the Grade</h3>	
+						<div class="align-left">
+							<h5 class="fragment" data-fragment-index="0">Quizes</h5>
+							<p class="fragment indent" data-fragment-index="0"> 66 + 76 + 73 + 91 = 306 <br> 306 /4 = <span class='red'>76.5</span></p>
+							<h5 class="fragment" data-fragment-index="1">Tests</h5>
+							<p class="fragment indent" data-fragment-index="1"> 96 + 89 = 185 <br> 185 /2 = <span class='red'>92.5</span></p>
+							<h5 class="fragment" data-fragment-index="2">Total</h5>
+							<p class="fragment indent" data-fragment-index="2">(92.5 * 0.6) + (76.5 * 0.4) = <span class='green'>86.1</span></p>
+						</div>
+					</section>
+					<section data-background-image="https://media.giphy.com/media/iW8tsoJWcfPc4/giphy.gif">
+						<h2>Moving on</h2>
+					</section>
+				</section>
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			Reveal.initialize({
+				history: true,
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>
